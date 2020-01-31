@@ -19,7 +19,7 @@ export default class Index extends Component {
     navigationBarTitleText: '首页',
   }
 
-  handleSubmit(e) {
+  handleSubmit(e) { // 提交时将用户输入的标题和内容加到post数组后，然后清空表单的标题和内容
     e.preventDefault()
 
     const { formTitle: title, formContent: content } = this.state
