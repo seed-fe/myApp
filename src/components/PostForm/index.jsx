@@ -1,5 +1,5 @@
 import Taro from '@tarojs/taro'
-import { View, Form, Input, Textarea, Button } from '@tarojs/components'
+import { View, Form, Input, Textarea } from '@tarojs/components'
 import { AtButton } from 'taro-ui'
 
 import './index.scss'

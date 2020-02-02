@@ -1,5 +1,5 @@
 import Taro, { useState } from '@tarojs/taro'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import { AtFab, AtFloatLayout, AtMessage } from 'taro-ui'
 
 import { PostCard, PostForm } from '../../components'
@@ -32,7 +32,7 @@ export default function Index() {
   }
 
   return (
-    <View className="index">
+    <View className='index'>
       <AtMessage />
       {posts.map((post, index) => (
         <PostCard
@@ -44,7 +44,7 @@ export default function Index() {
       ))}
       <AtFloatLayout
         isOpened={isOpened}
-        title="发表新文章"
+        title='发表新文章'
         onClose={() => setIsOpened(false)}
       >
         <PostForm
@@ -55,9 +55,9 @@ export default function Index() {
           handleContentInput={e => setFormContent(e.target.value)}
         />
       </AtFloatLayout>
-      <View className="post-button">
+      <View className='post-button'>
         <AtFab onClick={() => setIsOpened(true)}>
-          <Text className="at-fab__icon at-icon at-icon-edit"></Text>
+          <Text className='at-fab__icon at-icon at-icon-edit'></Text>
         </AtFab>
       </View>
     </View>
